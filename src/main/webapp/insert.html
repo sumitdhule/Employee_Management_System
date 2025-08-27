@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"> </script>
+<style>
+
+	body{
+		height: 100vh;
+		text-align: center;
+		background-image: url('https://tse2.mm.bing.net/th/id/OIP.Bsy9EBct6U2QgTE6P0HqywHaE7?rs=1&pid=ImgDetMain&o=7&rm=3');
+		background-size: cover;
+		margin: 0;
+        /* font-size: 20px; */
+
+	}
+	h2 {
+		/* color: #fff; */
+		font-weight: bold;
+		text-shadow: 1px 1px 2px black;
+	}
+	section{
+		background: rgba(255, 255, 255, 0); 
+		backdrop-filter: blur(8px);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+		border-radius: 15px;
+		padding: 20px;
+        /* height: auto; */
+        width: 100px;
+		width: 350px;
+		font-size: 20px;
+		/* font: bolder; */
+		margin: 120px auto;
+		/* text-align: center; */
+	}
+	h2 {
+		color: #fff;
+		font-size: 30px;
+		font-weight: bold;
+		text-shadow: 1px 1px 2px black;
+	}
+	form {
+	background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    /* height: 20vh; */
+
+	}
+	input[type="submit"] {
+		font-size: 18px;
+		height: 48px;
+		width: 100px;
+		justify-self: center;
+		background: linear-gradient(to right, #00c6ff, #0072ff);
+		border: none;
+		padding: 10px 20px;
+		border-radius: 25px;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	input[type="submit"]:hover {
+    transform: scale(1.05);
+  		background: linear-gradient(to right, #0072ff, #00c6ff);
+	}
+	
+</style>
+
+</head>
+<body >
+	<h2>Employee Management System</h2>
+	
+	<section>
+		<h3 class="fw-bold">Insert New Employee</h3>
+		<form action="addUser" method="post">
+		Name: <input type="text" name="name" class="form-control" autocomplete="off" required> <br>
+		Employee ID: <input type="number" name="id" class="form-control" autocomplete="off" required> <br>
+		Aadhaar Number: <input type="text" name="adhar" class="form-control" autocomplete="off" required> <br>
+		<input type="submit" value="Insert" class="form-control fw-bold">
+	</form>
+	</section>
+	
+	
+	
+</body>
+</html>
+

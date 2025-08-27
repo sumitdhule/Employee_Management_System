@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Employee</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      height: 100vh;
+      background-image: url('https://tse2.mm.bing.net/th/id/OIP.Bsy9EBct6U2QgTE6P0HqywHaE7?rs=1&pid=ImgDetMain&o=7&rm=3');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 1px 1px 2px rgb(137, 112, 38);
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+      color: white;
+    }
+
+    h2 {
+      text-shadow: 1px 1px 2px black;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      font-size: 18px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      color: white;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+    }
+
+    label {
+      margin-bottom: 5px;
+      text-align: left;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Employee Management System</h1>
+
+  <section>
+    <h2>Delete Employee</h2>
+    <form action="deleteUser" method="post">
+      <div class="mb-3 text-start">
+        <label for="adhar" class="form-label">Aadhaar Number:</label>
+        <input type="text" class="form-control" id="adhar" name="adhar" autocomplete="off" required>
+      </div>
+      <input type="submit" value="Delete">
+    </form>
+  </section>
+
+</body>
+</html>

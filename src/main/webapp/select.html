@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View Employee</title>
+<style>
+
+	body{
+		height: 100vh;
+		text-align: center;
+		font-size: large;
+		background-image: url('https://tse2.mm.bing.net/th/id/OIP.Bsy9EBct6U2QgTE6P0HqywHaE7?rs=1&pid=ImgDetMain&o=7&rm=3');
+		background-size: cover;
+		margin: 0;
+
+	}
+	section{
+		background: rgba(255, 255, 255, 0); /* semi-transparent white */
+		backdrop-filter: blur(8px); /* glass effect */
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+		border-radius: 15px;
+		padding: 20px;
+		width: 300px;
+		margin: 180px auto;
+		font-size: 20px;
+		text-align: center;
+	}
+	h2 {
+		color: #fff;
+		font-weight: bold;
+		text-shadow: 1px 1px 2px black;
+	}
+	form {
+	background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+	}
+	input[type="submit"] {
+		font-size: 18px;
+		color: #fff;
+		background: linear-gradient(to right, #00c6ff, #0072ff);
+		border: none;
+		padding: 10px 20px;
+		border-radius: 25px;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	input[type="submit"]:hover {
+  		transform: scale(1.05);
+  		background: linear-gradient(to right, #0072ff, #00c6ff);
+	}
+	
+</style>
+</head>
+<body>
+	<h1 style="color: white;">Employee Management System</h1>
+	<section>
+		<h2><strong>All Employee Records</strong></h2>
+	<form action="getUser" method="post">
+		<input type="submit" value="Click here">
+	</form>
+	
+	</section>
+	
+</body>
+</html>
