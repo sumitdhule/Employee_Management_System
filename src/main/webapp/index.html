@@ -8,28 +8,25 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <style>
         body {
-            /*background-image: url(https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Txj6wI7HOqAjRJXN-vQ1nw.jpeg);
-            */
-            background-image: url("./images/index.png");
-            
+            background-image: url("https://tse2.mm.bing.net/th/id/OIP.Bsy9EBct6U2QgTE6P0HqywHaE7?rs=1&pid=ImgDetMain&o=7&rm=3");
             background-color: #fdf0d5;
-            /* display: flex; */
             background-size:cover ;
             justify-self: center;
-            /* align-items: center; */
-            /* height: 100vh; */
             margin: 20px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         section {
-            /* background-color: #ffffff; */
             width: 500px;
             margin-top: 120px;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+		    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
             text-align: center;
+
         }
 
         h2 {
@@ -48,7 +45,7 @@
             border: none;
             border-radius: 10px;
             background-color: #0d6efd;
-            color: white;
+            /* color: white; */
             font-weight: bold;
             transition: all 0.3s ease;
             font-size: 18px;
@@ -64,12 +61,22 @@
             flex-direction: column;
             align-items: center;
         }
+        a { 
+        	display: block; 
+        	text-align: center; 
+        	margin-top: 20px; 
+        	text-decoration: none; 
+        	color: white;
+            font-size: large;
+            
+        
+        }
     </style>
 </head>
 <body>
 
     <h2>Employee Management System</h2>
-<section class="container" style="background-color: rgba(7, 0, 4, 0.801);">
+<section class="container" >
     <div class="form-wrapper">
         <form action="insert.html">
             <input type="submit" value="Insert Employee">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </section>
+<a href="Login.html"><strong>Back</strong></a>
 
 </body>
 </html>
