@@ -1,14 +1,10 @@
 package com.task.beans;
 
-
-
 public class EmployeeData {
 	private String name;
 	private int id;
 	private String adharNumber;
-	
-	
-	
+		
 	public EmployeeData(String name, int id, String adharNumber) {
 		super();
 		this.name = name;
@@ -46,6 +42,3 @@ public class EmployeeData {
 	}
 
 	}
-	
-	
-

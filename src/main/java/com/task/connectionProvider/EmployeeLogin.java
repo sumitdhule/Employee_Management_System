@@ -18,7 +18,7 @@ public class EmployeeLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		
+		System.out.println("Connected.......................");
 		Connection con;
 		final String DB_URL = "jdbc:oracle:thin:@localhost:1521:orcl";
 		final String DB_USER = "akash";
@@ -29,13 +29,11 @@ public class EmployeeLogin extends HttpServlet {
 		
 		String user = req.getParameter("username");
 		String password = req.getParameter("password");
-		
 		String query = "select * from login where username=? and password=?";
 
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
 			con = DriverManager.getConnection(DB_URL,DB_USER,DB_PASS);
-			
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setString(1, user);
 			ps.setString(2, password);
@@ -50,12 +48,8 @@ public class EmployeeLogin extends HttpServlet {
 				RequestDispatcher rd = req.getRequestDispatcher("Login.html");
 				rd.forward(req, res);
 			}
-			
-			
 		}catch(Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
-
 }
