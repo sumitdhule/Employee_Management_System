@@ -18,7 +18,7 @@ public class EmployeeLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		System.out.println("Connected.......................");
+//		System.out.println("Connected");
 		Connection con;
 		final String DB_URL = "jdbc:oracle:thin:@localhost:1521:orcl";
 		final String DB_USER = "akash";
