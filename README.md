@@ -1,4 +1,4 @@
-# 👨‍💼 Employee Management System  
+# 👨‍💼 Employee Management System(Adv Java)  
 
 A **console-based Employee Management System** built using **Core Java, JDBC, and Oracle Database**.  
 This project helps manage employee records like adding, viewing, updating, and deleting employee details in a database.  
